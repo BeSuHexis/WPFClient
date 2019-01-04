@@ -45,7 +45,6 @@ namespace WpfRegister
                 this.Email.Text = UserEmail;
                 this.UserProfilePhoto = result.ProfilePhoto;
                 this.ProfilePhoto.Text = UserProfilePhoto;
-                this.UserBornDate = result.BornDate;
                 this.BornDate.SelectedDate = UserBornDate;
                 this.UserCountry = result.Country;
                 this.Country.Text = UserCountry;

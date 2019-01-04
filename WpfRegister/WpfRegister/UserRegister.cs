@@ -12,7 +12,9 @@ namespace WpfRegister
         public string Surname { get; set; }
         public string Email { get; set; }
         public string ProfilePhoto { get; set; }
-        public DateTime BornDate { get; set; }
+        public int Day { get; set; }
+        public int Month { get; set; }
+        public int Year { get; set; }
         public string Country { get; set; }
         public string DeviceName { get; set; } = RunTimeVariables.DeviceName;
 
@@ -22,7 +24,9 @@ namespace WpfRegister
             Surname = surname;
             Email = email;
             ProfilePhoto = profilePhoto;
-            BornDate = borndate;
+            this.Day = borndate.Day;
+            this.Month = borndate.Month;
+            this.Year = borndate.Year;
             Country = country;
         }
     }

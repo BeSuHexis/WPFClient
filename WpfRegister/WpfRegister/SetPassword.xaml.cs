@@ -40,7 +40,9 @@ namespace WpfRegister
             }
             else
             {
-                
+                Login Register = new Login();
+                Register.Show();
+                Close();
             }
         }
         
