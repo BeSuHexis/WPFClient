@@ -1,4 +1,5 @@
 ﻿<Window x:Class="WpfRegister.MainWindow"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -42,7 +43,7 @@
                      Text = "{Binding UserProfilePhoto}"/>
         <!-- User Name -->
             <TextBlock Grid.Row="9" Text="BornDate"/>
-            <DatePicker Height="25" Grid.Row="10" HorizontalAlignment="Left" DisplayDate="01/01/2000" Margin="10 0 0 0" Name="BornDate" VerticalAlignment="Top" Width="115" Text = "{Binding UserBornDate, Mode = OneWay}"/>
+            <DatePicker Height="25" SelectedDate="{x:Static sys:DateTime.Now}" Grid.Row="10" HorizontalAlignment="Left" Margin="10 0 0 0" Name="BornDate" VerticalAlignment="Top" Width="115" Text = "{Binding UserBornDate, Mode = OneWay}" DisplayDateStart="2019-01-04"/>
             
         <!-- User Name -->
             <TextBlock Grid.Row="11" Text="Country"/>

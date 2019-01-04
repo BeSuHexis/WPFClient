@@ -28,6 +28,7 @@ namespace WpfRegister
             public MainWindow()
         {
             InitializeComponent();
+            BornDate.SelectedDate = DateTime.Today;
             DataContext = this;
         }
         public string UserName { get; set; }
