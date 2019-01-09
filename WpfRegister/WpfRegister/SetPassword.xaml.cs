@@ -27,6 +27,7 @@ namespace WpfRegister
         public SetPassword()
         {
             InitializeComponent();
+            this.DataContext = new WindowViewModel(this);
             DataContext = this;
         }
         private void Button_Click(object sender, RoutedEventArgs e)

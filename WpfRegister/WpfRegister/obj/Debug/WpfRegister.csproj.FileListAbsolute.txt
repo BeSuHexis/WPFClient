@@ -92,3 +92,11 @@ C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\WpfR
 C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\WpfRegister.csproj.CopyComplete
 C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\WpfRegister.exe
 C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\WpfRegister.pdb
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\App.baml
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styles\Buttons.baml
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styles\Colors.baml
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styles\Texts.baml
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styles\Windows.baml
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\GeneratedInternalTypeHelper.g.cs

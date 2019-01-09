@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfRegister"
+        x:Name="LoginWindow"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Icon="Images/Cuckoo.jpg"
         mc:Ignorable="d"
         Title="Login" MinHeight="300" MinWidth="300" MaxHeight="400" MaxWidth="600" Height="300" Width="300">
-    <StackPanel>
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Control.Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+            ResizeBorderThickness="{Binding ResizeBorderThickness}"
+            CaptionHeight="{Binding TitleHeight}"
+            GlassFrameThickness="0"
+            />
+    </WindowChrome.WindowChrome>
+
+    <StackPanel Background="#353535">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />

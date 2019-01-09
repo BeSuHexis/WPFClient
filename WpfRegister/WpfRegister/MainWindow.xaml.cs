@@ -28,7 +28,8 @@ namespace WpfRegister
             public MainWindow()
         {
             InitializeComponent();
-            BornDate.SelectedDate = DateTime.Today;
+            this.DataContext = new WindowViewModel(this);
+            UserBornDate = System.DateTime.Now;
             DataContext = this;
         }
         public string UserName { get; set; }
@@ -40,7 +41,7 @@ namespace WpfRegister
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             UserRegister ur = new UserRegister(UserName, UserSurname, UserEmail, UserProfilePhoto, UserBornDate, UserCountry);
-            JObject json = callAsync(ur);
+            JObject json = callSync(ur);
             RegisterResult result = json.ToObject<RegisterResult>(new Newtonsoft.Json.JsonSerializer());
             if (String.IsNullOrEmpty(result.TokenString))
             {
@@ -61,7 +62,7 @@ namespace WpfRegister
             login.Show();
             Close();
         }
-        public JObject callAsync(UserRegister ur)
+        public JObject callSync(UserRegister ur)
         {
             JObject result = URL.AppendPathSegment("user/create").PostJsonAsync(ur).ReceiveJson<JObject>().Result;
             return result;

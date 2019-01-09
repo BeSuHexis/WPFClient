@@ -27,7 +27,6 @@ namespace WpfRegister
         {
             InitializeComponent();
             DataContext = this;
-            BornDate.DisplayDate = System.DateTime.Now.AddYears(-15);
             UserProfile userProfile = new UserProfile();
             JObject json = SetProfile(userProfile);
             UserRegister result = json.ToObject<UserRegister>(new Newtonsoft.Json.JsonSerializer());
@@ -38,7 +37,7 @@ namespace WpfRegister
             else
             {
                 this.UserName = result.Name;
-                this.Surname.Text = UserSurname;
+                this.Name.Text = UserName;
                 this.UserSurname = result.Surname;
                 this.Surname.Text = UserSurname;
                 this.UserEmail = result.Email;
@@ -49,6 +48,7 @@ namespace WpfRegister
                 this.UserCountry = result.Country;
                 this.Country.Text = UserCountry;
             }
+            this.DataContext = new WindowViewModel(this);
         }
         public string UserName { get; set; }
         public string UserSurname { get; set; }

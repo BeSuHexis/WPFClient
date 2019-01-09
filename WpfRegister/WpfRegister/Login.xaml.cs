@@ -28,6 +28,7 @@ namespace WpfRegister
         public Login()
         {
             InitializeComponent();
+            this.DataContext = new WindowViewModel(this);
             DataContext = this;
         }
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
@@ -39,7 +40,7 @@ namespace WpfRegister
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             UserLogin userLogin = new UserLogin(this.UserEmail, this.UserPassword);
-            JObject json = callAsync(userLogin);
+            JObject json = callSync(userLogin);
             LoginResult result =json.ToObject<LoginResult>(new Newtonsoft.Json.JsonSerializer());
             if (String.IsNullOrEmpty(result.TokenString))
             {
@@ -56,7 +57,7 @@ namespace WpfRegister
             
            
         }
-        public JObject callAsync(UserLogin ul)
+        public JObject callSync(UserLogin ul)
         {
             JObject result =  URL.AppendPathSegment("login/login").PostJsonAsync(ul).ReceiveJson<JObject>().Result;
             return result;
