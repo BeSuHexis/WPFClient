@@ -50,6 +50,12 @@ namespace WpfRegister
             }
             this.DataContext = new WindowViewModel(this);
         }
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            Main main = new Main();
+            main.Show();
+            Close();
+        }
         public string UserName { get; set; }
         public string UserSurname { get; set; }
         public string UserEmail { get; set; }

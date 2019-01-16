@@ -77,8 +77,10 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Margin="10 " Grid.Column="0" Content="Save Changes" Click="Button_Click"/>
-
+            <Button Margin="10" Grid.Column="0" Content="Save Changes" Click="Button_Click"/>
+            <Label Grid.Column="6"  Name="label1" VerticalAlignment="Top">
+                <Hyperlink Click="Hyperlink_Click">Back to chatting</Hyperlink>
+            </Label>
         </Grid>
     </StackPanel>
 </Window>

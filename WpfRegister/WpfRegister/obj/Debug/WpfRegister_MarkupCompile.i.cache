@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Hexis\Desktop\WpfRegister\WpfRegister\obj\Debug\
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\
 WpfRegister
 none
 false
 DEBUG;TRACE
-C:\Users\Hexis\Desktop\WpfRegister\WpfRegister\App.xaml
-4-697247230
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\App.xaml
+9-1566796880
 
-21-222907886
-16-926718813
-Login.xaml;MainWindow.xaml;SetPassword.xaml;Profile.xaml;
+25-231940595
+181489292921
+Login.xaml;Main.xaml;MainWindow.xaml;SetPassword.xaml;Profile.xaml;Styles\Buttons.xaml;Styles\Colors.xaml;Styles\Texts.xaml;Styles\Windows.xaml;
 
-False
+True
 

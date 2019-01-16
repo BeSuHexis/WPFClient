@@ -41,7 +41,7 @@ namespace WpfRegister
             }
             else
             {
-                Login Register = new Login();
+                Main Register = new Main();
                 Register.Show();
                 Close();
             }

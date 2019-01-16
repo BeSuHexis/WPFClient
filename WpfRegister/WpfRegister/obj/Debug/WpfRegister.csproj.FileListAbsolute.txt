@@ -100,3 +100,5 @@ C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styl
 C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styles\Texts.baml
 C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Styles\Windows.baml
 C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Main.g.cs
+C:\Users\Hexis\Documents\GitHub\WPFClient\WpfRegister\WpfRegister\obj\Debug\Main.baml
